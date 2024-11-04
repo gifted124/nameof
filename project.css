@@ -7,6 +7,7 @@
     width: 100%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.747);
+    z-index: 1000;
   }
   
   .nav{
@@ -65,7 +66,7 @@
   }
   
   .s_lang button{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(74, 112, 181);
     color: black;
     padding-right: 10px;
     font-size: 13px;
@@ -216,6 +217,10 @@ height: 50%;
   font-weight: lighter;
 }
 .data-page{
+  background-color: rgb(42, 82, 156);
+  height: 230px;
+  width: 100%;
+  overflow: hidden;
   justify-content: center;
   display: flex;
   justify-content: space-between;
@@ -244,6 +249,24 @@ height: 50%;
     padding-top: 20px;
     padding-left: 40px;
   }
+}
+.col-2:hover{
+  transform: translateX(45px);
+  transition: transform .5s ease-in-out;
+ position: relative; 
+  overflow: hidden;
+}
+.col-3:hover{
+  transform: translateX(45px);
+  transition: transform .5s ease-in-out;
+ position: relative; 
+  overflow: hidden;
+}
+.col-4:hover{
+  transform: translateX(45px);
+  transition: transform .5s ease-in-out;
+ position: relative; 
+  overflow: hidden;
 }
 .col-2{
   background-color: #009ddc;
@@ -280,6 +303,9 @@ height: 50%;
 .secun{
   display: flex;
   height: 400px;
+  perspective: 1000;
+  background-color:#7da742;
+  width: 100%;height: 400px;
 }
 .sec-1{
   background-color: #7fc027;
@@ -287,6 +313,7 @@ height: 50%;
   width: 450px;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
+  perspective: 1000;
   img{
     padding-left: 80px;
     padding-top: 100px;
@@ -305,11 +332,19 @@ height: 50%;
     ;
   }
 }
+.sec-1:hover{
+  transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    transform: rotateY(50deg);
+    border: 6px solid #457304;
+    border-width: 0px 6px 0px 0px;
+ }
 .alon{
   background-color: #7fc027;
  width: 353px;
  border-right: 1px solid black;
  height: 402px;
+ 
 h1{
   color: white;
   font-size: 50px;
@@ -337,10 +372,18 @@ img{
   height: 400px;
   width: 460px;
   border-bottom: 1px solid black;
+  
   img{
     margin-top: 150px;
     padding-left: 120px;
   }
+ }
+ .sec-2:hover{
+  transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    transform: rotateY(50deg);
+    border: 6px solid #457304;
+    border-width: 0px 6px 0px 0px;
  }
  h4{
   color: white;
@@ -455,9 +498,10 @@ img{
   }
  }
  .pyt{
-  height: 600px;
+  height: 800px;
   width: 100%;
   display: flex;
+  background-color: #044f6c;
  }
  .gloom1{
   width: 50%;
@@ -486,6 +530,61 @@ img{
     padding-top: 170px;
     padding-left: 34px;
   }
+ }
+ .python4:hover{
+  transform: translate(30px, 30px);
+  transition: transform 1s ease;
+  cursor: pointer;
+ }
+ .python66{
+  background-color: #009ddc;
+  height: 400px;
+  width: 50%;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  img{
+    padding-top: 170px;
+    padding-left: 34px;
+  }
+ }
+ .python66:hover{
+  transform: translate(30px, 30px);
+  transition: transform 1s ease;
+  cursor: pointer;
+ }
+ .python44{
+  background-color: #009ddc;
+  height: 400px;
+  width: 50%;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  img{
+    padding-top: 170px;
+    padding-left: 34px;
+  }
+ }
+ .python44:hover{
+  transform: translate(30px, 30px);
+  transition: transform 1s ease;
+  cursor: pointer;
+ }
+ .python00{
+  background-color: #009ddc;
+  height: 400px;
+  width: 50%;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  img{
+    padding-top: 170px;
+    padding-left: 34px;
+  }
+ }
+ .python00:hover{
+  transform: translate(30px, 30px);
+  transition: transform 1s ease;
+  cursor: pointer;
  }
  .juul-l{
   background-color: #009ddc;
@@ -656,6 +755,9 @@ img{
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+  img{
+    width: 70px;
+  }
 }
 .grid_6b:hover{
   cursor: pointer;
